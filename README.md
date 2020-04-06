@@ -6,7 +6,7 @@ Creating common visualizations to analyse an epidemic outbreak, using Stata (COV
 Francisco Rodríguez Cabrera<br>
 Medical resident in Public Health<br>
 Spanish National Center of Epidemiology<br>
-Carlos III Health Institute<br>
+Instituto de Salud Carlos III<br>
 Madrid, Spain
 
 Contact: fdrodriguez@isciii.es
