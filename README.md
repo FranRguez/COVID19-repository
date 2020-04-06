@@ -1,4 +1,4 @@
-# Epidemic Do-files
+# Epidemic do-files
 Creating typical figures to analyse an epidemic outbreak, using Stata (COVID-19).
 
 2020-04-06
