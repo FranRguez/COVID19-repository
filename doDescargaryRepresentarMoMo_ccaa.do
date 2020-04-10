@@ -14,8 +14,8 @@ local asemesterago : di daily("$S_DATE", "DMY")-183
 local threemonthsago : di daily("$S_DATE", "DMY")-90
 
 * Importar datos automáticamente
-* import delimited "https://momo.isciii.es/public/momo/data", delimiter(",") clear 
-* save "momodata`update'_ccaa", replace
+import delimited "https://momo.isciii.es/public/momo/data", delimiter(",") clear 
+save "momodata`update'_ccaa", replace
 
 use "momodata`update'", clear
 gen date=date(fecha_defuncion, "YMD")
