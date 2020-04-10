@@ -56,9 +56,8 @@ yla(`min'(500)`max', angle(0))  by(nombre_ambito)
 
  
  
-** Proporción de incrementos.
-drop if nombre_ambito=="Ceuta" 
-drop if nombre_ambito=="Melilla"
+** Los datos de Ceuta y Melilla pueden desproporcionar mucho el incremento.
+
 
 
 gen proporcionincremento=defunciones_observadas*100/defunciones_esperadas
