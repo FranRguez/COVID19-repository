@@ -17,7 +17,7 @@ local threemonthsago : di daily("$S_DATE", "DMY")-90
 import delimited "https://momo.isciii.es/public/momo/data", delimiter(",") clear 
 save "momodata`update'_ccaa", replace
 
-use "momodata`update'", clear
+use "momodata`update'_ccaa", clear
 gen date=date(fecha_defuncion, "YMD")
 format %tdDD/NN/CCYY date
 drop if ambito=="nacional"
