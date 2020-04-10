@@ -1,9 +1,14 @@
+* COVID-19 Informes Automáticos
+* Autor: Francisco Rodriguez Cabrera
+* MIR Medicina Preventiva y Salud Pública
+* Centro Nacional de Epidemiología
+* Instituto de Salud Carlos III
+* Contacto: fdrodriguez@isciii.es
+
 * Qué día es hoy?
 local update : di %tdCCYY-NN-DD daily("$S_DATE", "DMY")
 local hoyformato : di %tdDD/NN/CCYY daily("$S_DATE", "DMY")
 local hoy : di daily("$S_DATE", "DMY")
-
-local asemesterago_formato : di  %tdDD/NN/CCYY  daily("$S_DATE", "DMY")-183
 local ayearago : di daily("$S_DATE", "DMY")-365 
 local asemesterago : di daily("$S_DATE", "DMY")-183 
 local threemonthsago : di daily("$S_DATE", "DMY")-90
@@ -56,8 +61,8 @@ yla(`min'(500)`max', angle(0))  by(nombre_ambito)
 
  
  
-** Los datos de Ceuta y Melilla pueden desproporcionar mucho el incremento.
-
+** Por un número de población más pequeño, los datos de Ceuta y Melilla podrían desproporcionar los ejes. Para visualizar adecuadamente el resto, sería posible visualizar a estos únicamente.
+* drop if codigo_ambito=="Melilla" | codigo_ambito=="Ceuta"
 
 
 gen proporcionincremento=defunciones_observadas*100/defunciones_esperadas
