@@ -1,4 +1,4 @@
-# Epidemic do-files
+# Epidemiology do-files
 Creating common visualizations to analyse an epidemic outbreak, using Stata (COVID-19).
 
 Francisco Rodríguez Cabrera<br>
