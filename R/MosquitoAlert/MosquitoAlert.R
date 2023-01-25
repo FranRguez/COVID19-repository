@@ -81,16 +81,8 @@ limprov_df <- merge(limprov_df, limprov@data ,by.x='id',by.y='INSPIREID')
   
   
   # Asignar el nombre a cada base de datos
-  nombresinjson <- str_replace(i, ".json", "")
-  
-map2014 <- ggplot() + geom_polygon(data = limprov, aes(x = long, y = lat, group = group), colour = "black", fill = "antiquewhite") + geom_point(data = all_reports2014, alpha = 0.5, aes(x=lon, y=lat, size=0.4, color=all_reports2014$movelab_annotation$classification)) + labs(title="Detecciones de Mosquito Alert. Fecha 03/03/2014")
-map2015 <- ggplot() + geom_polygon(data = limprov, aes(x = long, y = lat, group = group), colour = "black", fill = "antiquewhite") + geom_point(data = all_reports2015, alpha = 0.5, aes(x=lon, y=lat, size=0.4, color=all_reports2015$movelab_annotation$classification)) + labs(title="Detecciones de Mosquito Alert. Fecha 03/03/2015")
-map2016 <- ggplot() + geom_polygon(data = limprov, aes(x = long, y = lat, group = group), colour = "black", fill = "antiquewhite") + geom_point(data = all_reports2016, alpha = 0.5, aes(x=lon, y=lat, size=0.4, color=all_reports2016$movelab_annotation$classification)) + labs(title="Detecciones de Mosquito Alert. Fecha 03/03/2016")
-map2017 <- ggplot() + geom_polygon(data = limprov, aes(x = long, y = lat, group = group), colour = "black", fill = "antiquewhite") + geom_point(data = all_reports2017, alpha = 0.5, aes(x=lon, y=lat, size=0.4, color=all_reports2017$movelab_annotation$classification)) + labs(title="Detecciones de Mosquito Alert. Fecha 03/03/2017")
-map2018 <- ggplot() + geom_polygon(data = limprov, aes(x = long, y = lat, group = group), colour = "black", fill = "antiquewhite") + geom_point(data = all_reports2018, alpha = 0.5, aes(x=lon, y=lat, size=0.4, color=all_reports2018$movelab_annotation$classification)) + labs(title="Detecciones de Mosquito Alert. Fecha 03/03/2018")
-map2019 <- ggplot() + geom_polygon(data = limprov, aes(x = long, y = lat, group = group), colour = "black", fill = "antiquewhite") + geom_point(data = all_reports2019, alpha = 0.5, aes(x=lon, y=lat, size=0.4, color=all_reports2019$movelab_annotation$classification)) + labs(title="Detecciones de Mosquito Alert. Fecha 03/03/2019")
-map2020 <- ggplot() + geom_polygon(data = limprov, aes(x = long, y = lat, group = group), colour = "black", fill = "antiquewhite") + geom_point(data = all_reports2020, alpha = 0.5, aes(x=lon, y=lat, size=0.4, color=all_reports2020$movelab_annotation$classification)) + labs(title="Detecciones de Mosquito Alert. Fecha 03/03/2020")
-map2021 <- ggplot() + geom_polygon(data = limprov, aes(x = long, y = lat, group = group), colour = "black", fill = "antiquewhite") + geom_point(data = all_reports2021, alpha = 0.5, aes(x=lon, y=lat, size=0.4, color=all_reports2021$movelab_annotation$classification, colour=)) + labs(title="Detecciones de Mosquito Alert. Fecha 03/03/2021")
+nombresinjson <- str_replace(i, ".json", "")
+
 map2022 <- ggplot() + geom_polygon(data = limprov, aes(x = long, y = lat, group = group), colour = "black", fill = "antiquewhite") + 
     geom_point(data = all_reports2022, alpha = 0.5, aes(x=lon, y=lat, size=0.2, color=all_reports2022$movelab_annotation$classification), show.legend = NA) +
     labs(title="Detecciones de Mosquito Alert. Fecha 03/03/2022") +   theme(axis.title=element_blank(),
